@@ -1,3 +1,5 @@
+## Payment Plugins
+
 - [Introduction](#introduction)
 - [Plugin Structure](#pluginstructure)
 - [Naming conventions](#namingconventions)
