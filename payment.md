@@ -1,4 +1,4 @@
-## Payment Plugins
+# Payment Plugins
 
 - [Introduction](#introduction)
 - [Plugin Structure](#pluginstructure)
