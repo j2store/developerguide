@@ -10,8 +10,9 @@
 <a name="introduction"></a>
 ##Introduction
 
-Integrating J2Store with your extension is pretty straightforward. Since Version 3, we implement a flexible Plugin API and the entire
-J2Store core is re-written from scratch using the Framework on Framework (FOF).
+Integrating J2Store with your extension is pretty straightforward. Since Version 3, we implement a flexible Plugin API and the entire J2Store core is re-written from scratch using the Framework on Framework (FOF).
+
+So all you have to do is create an integration plugin for your component (using your component's events). It can be a system plugin or a plugin specific to your component.
 
 <a name="concept"></a>
 ##The Concept
@@ -38,11 +39,17 @@ This method takes care of it.
 <a name="integration"></a>
 ##Integrating with your component
 
-Let us now integrate J2Store with your component
+Let us integrate J2Store with your component
+
 >NOTE: You should be good with the Joomla Plugin concept to carry out the integration. I assume that you have a good understanding of plugin events
 
+Start the integration by creating a system plugin or plugin specific to your component. The plugin should have three events for 
+1. Display the product form fields in your item
+2. Save the product data (after your item data is saved)
+3. Display the cart
+
 <a name="getform"></a>
-### Get the product form fields
+### Display the product form fields
 The first and foremost task is to get the J2Store's Product form fields to display inside your component's item.
 
 If your component fire's an event after displaying the form, then the task is pretty easy. You can create a system plugin with the event and call the following lines
