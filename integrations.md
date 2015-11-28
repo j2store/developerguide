@@ -1,4 +1,4 @@
-#Integrating J2Store in your component
+#Creating an integration plugin for your component
 
 * **[Introduction](#introduction)**
 * **[The concept](#concept)**
