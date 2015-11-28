@@ -5,6 +5,7 @@
 * **[Integrating with your component](#integration)**
   * **[Get the product form fields](#getform)**
   * **[Save product data](#savedata)**
+  * **[Supply item data to J2Store ](#supplydata)**
   * **[Display the cart](#displaycart)**
 
 <a name="introduction"></a>
@@ -12,7 +13,7 @@
 
 Integrating J2Store with your extension is pretty straightforward. Since Version 3, we implement a flexible Plugin API and the entire J2Store core is re-written from scratch using the Framework on Framework (FOF).
 
-So all you have to do is create an integration plugin for your component (using your component's events). It can be a system plugin or a plugin specific to your component.
+So all you have to do is create an integration plugin for your component (using your component's events). It can be a system plugin or a plugin specific to your component. 
 
 <a name="concept"></a>
 ##The Concept
@@ -41,12 +42,13 @@ This method takes care of it.
 
 Let us integrate J2Store with your component
 
->NOTE: You should be good with the Joomla Plugin concept to carry out the integration. I assume that you have a good understanding of plugin events
+>NOTE: This guide assumes that you have a good understanding of Joomla Plugins and Events
 
-Start the integration by creating a system plugin or plugin specific to your component. The plugin should have three events for 
+Start the integration by creating a system plugin or plugin specific to your component. The plugin should have four events for 
 1. Display the product form fields in your item
 2. Save the product data (after your item data is saved)
-3. Display the cart
+3. Supply data to j2Store (via a J2Store event)
+4. Display the cart
 
 <a name="getform"></a>
 ### Display the product form fields
@@ -89,12 +91,33 @@ Then just pass the data (can be either an array or an object) to
 F0FModel::getTmpInstance('Products', 'J2StoreModel')->save($data);
 ```
 
->IMPORTANT: The array or object should contain have the product_source and product_source_id .
+>IMPORTANT: The array or object should have the product_source and product_source_id . Otherwise, J2Store will not be able to process your item as product.
 
 Example:
 ```php
 product_source='com_foo'
 product_source_id=$id //the ID of your item
+
+```
+
+<a name="supplydata">
+###Supply product data
+You will have to supply a few important information to J2Store. Example, the product name, its url etc. J2Store has an event called: onJ2StoreAfterGetProduct(&$product)
+
+>NOTE: If your Integration plugin is specific to your component, then you should create a system plugin with this event. Refer the K2 integration plugin for example.
+
+```php
+function onJ2StoreAfterGetProduct(&$product) {
+	if(isset($product->product_source) && $product->product_source == 'com_foo' ) {
+		//assign
+		$product->product_name = $name;
+		//supply a url to edit the item. This is essential. Because j2store will use this to link 
+		//when showing this item in the catalog list (in the backend)
+		$product->product_edit_url = '';
+		//supply a store front view url. This is optional
+		$product->product_view_url = '';
+		}
+	}
 ```
 
 <a name="displaycart"></a>
