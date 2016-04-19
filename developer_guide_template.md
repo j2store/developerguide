@@ -1,8 +1,9 @@
 #Introduction
+> Only for template developers. Read further on only if you are a template developer and familiar with the Joomla template system.
 
-Integrating J2Store with your template is very easy. Following is the step by step instructions on how to develop the template with J2Store.
+J2Store is a light-weight, flexible shopping cart with tonnes of features. The most interesting feature for template developers is: It supports sub-templates. Its layouts are clean and anyone can understand by just seeing it. The code is well-commented and you can almost read it like a book.
+This guide servers as a starting point for integrating J2Store with your template and add support for it.
 
-* **[Install Framework](#install_framework)**
 * **[Download and Install J2Store](#download_install_j2store)**
     * **[Download J2Store](#download_j2store)**
     * **[Install J2Store](#install_j2store)**
@@ -20,10 +21,6 @@ Integrating J2Store with your template is very easy. Following is the step by st
     * **[Checkout page](#checkout)**
     * **[Order history page](#myprofile)**
 
-<a name="install_framework"></a>
-##Install Framework
-
-Once you installed and configured the Joomla Content Management System, you have to install the template framework. For example, if you would like to develop the template using T3 framework, go to T3 framework's official website and download the framework as either Quickstart package or Blank template.
 
 <a name="download_install_j2store"></a>
 ##Download and Install J2Store
@@ -31,11 +28,13 @@ Once you installed and configured the Joomla Content Management System, you have
 <a name="download_j2store"></a>
 ####Download J2Store
 
-1. Get the J2Store package from our website http://j2store.org/
+1. Grab the J2Store package from our website http://j2store.org/
 
-2. If you would like to use PRO version of our product, you should be a member of J2Store.
+2. If you would like to use PRO version for integrating in your template, please get in touch with us. We will grant you a PRO license (which can be used for the development / style integration and in your template demo. The template package should only provide the FREE version).  
 
-3. Once you completed the registration process and got the login, go to http://j2store.org/my-downloads.html to download the PRO version.
+3. If you are in need of any apps like wishlist and product compare, please write to us. We are ready to help you with it.
+
+4. Become an affiliate ! You can start earning a handsome 30% for each of your referral sale.  http://j2store.org/affiliate-programme
 
 <a name="install_j2store"></a>
 ####Install J2Store
@@ -61,7 +60,23 @@ Once you installed and configured the Joomla Content Management System, you have
 ![](assets/images/j2store_basic_settings.png)
 
 <a name="choose_layout"></a>
-##Choose Layout to display your products
+## Choose Layout to display  products
+
+J2Store uses the default Joomla articles as products. So an article can be a product. That means you can use the Category blog, Single article layout for showcasing products.
+
+We also provide an awesome Product List Layout with a lots of controls. And it supports the sub-template concept like the K2. You can create any number of sub-templates and each can have a unique style.
+
+For example, the store front has two categories: Fruits, Vegetables.
+You can create a sub-template for fruits and set its own styles.
+You can create another sub-template for Vegetables and it can have its own styles.
+The possibilities are limitless.
+
+By default, j2store comes with two sub-templates
+1. Default - This is based on the Bootstrap 2.x
+2. Bootstrap 3 - As the name says, this supports the Bootstrap 3 markup.
+
+So you can build you sub-template by copying one of these.
+
 
 <a name="j2store_layout"></a>
 ####J2Store Product List View
