@@ -47,18 +47,18 @@ Once you installed and configured the Joomla Content Management System, you have
 3. Choose and select your file.
 
 4. Click Upload & Install.
-![](assets/images/j2store_install.png)
+![](./assets/images/j2store_install.png)
 
 <a name="j2store_configure"></a>
 ####J2Store Configuration
 
 1. Once installed, you will get J2store in the Joomla component list and also separate J2store tab in Joomla backend.
-![](assets/images/j2store_component.png)
+![](./assets/images/j2store_component.png)
 
 2. Now, Go to J2store > Dashboard.
 
 3. Fill all the fields in the basic settings and click Save & Proceed.
-![](assets/images/j2store_basic_settings.png)
+![](./assets/images/j2store_basic_settings.png)
 
 <a name="choose_layout"></a>
 ##Choose Layout to display your products
@@ -71,10 +71,10 @@ It is very easy and flexible to display the product in frontend using J2Store La
 1. Go to Menu manager -> Main menu and create a new menu item.
 
 2. Give the menu title and choose the menu type as **J2store > Product List View**
-![](assets/images/j2store_layout.png)
+![](./assets/images/j2store_layout.png)
 
 3. Choose the Category which have chosen when creating product. The category added in the product and the category added in the menu should be same.
-![](assets/images/j2store_menu.png)
+![](./assets/images/j2store_menu.png)
 
 4. In the menu you can see these three tabs **common options, Item view options in category listings, Item view options**.
 
@@ -101,13 +101,13 @@ This is the another method / way / layout to display your products. By using thi
 2. Go to Content > Articles > Add new article. Now, new article page will open.
 
 3. Give the title of the product, add your description about the product in the content tab and choose the category in which you want to display the product(category chosen here and category chosen in the menu should be same).
-![](assets/images/j2store_create_product.png)
+![](./assets/images/j2store_create_product.png)
 
 4. Now, go to J2store Cart tab, choose **YES** to treat article as a product then choose your **Product Type** from the list(Simple, Variable, Configurable, Downloadable) and then click **Save and Continue**.
-![](assets/images/j2store_product_type.png)
+![](./assets/images/j2store_product_type.png)
 
 5. After saving, again go to J2store cart tab. Now you can see the options to add image for product, set prices, add filters / Tax / Shipping.
-![](assets/images/j2store_product_settings.png)
+![](./assets/images/j2store_product_settings.png)
 
 <a name="file_override_location"></a>
 ##J2Store File Location and override procedure
@@ -125,7 +125,7 @@ If you choose default as sub-template then you have to go with default folder.
 ####Frontpage product listing files
 
 Open your sub-template folder(/components/com_j2store/templates/YOUR-SUB-TEMPLATE) where you can find the files with name started with default_(for example, default_simple.php, default_images.php, etc). Those files controls all the features displaying in the category listing page.
-![](assets/images/template_guide_product_detail.png)
+![](./assets/images/template_guide_product_detail.png)
 
 **OVERRIDE PATH**
 templates/YOUR-TEMPLATE/html/com_j2store/templates/YOUR-SUB-TEMPLATE/
@@ -134,7 +134,7 @@ templates/YOUR-TEMPLATE/html/com_j2store/templates/YOUR-SUB-TEMPLATE/
 ####Product view
 
 Open your sub-template folder where you can find the files with name started with view_(for example, view_simple.php, view_images.php, view_options.php, view_notabs.php, etc). Those files controlled all the features displaying in the Product view page.
-![](assets/images/template_guide_product_view.png)
+![](./assets/images/template_guide_product_view.png)
 
 **OVERRIDE PATH**
 templates/YOUR-TEMPLATE/html/com_j2store/templates/YOUR-SUB-TEMPLATE/
@@ -155,7 +155,7 @@ templates/YOUR-TEMPLATE/html/com_j2store/templates/YOUR-SUB-TEMPLATE/
 ####Cart page
 
 Cart page is controlled by the files located in the follwing path /components/com_j2store/views/carts/tmpl
-![](assets/images/template_guide_cart.png)
+![](./assets/images/template_guide_cart.png)
 
 **OVERRIDE PATH**
 templates/YOUR-TEMPLATE/html/com_j2store/carts/
@@ -164,7 +164,7 @@ templates/YOUR-TEMPLATE/html/com_j2store/carts/
 ####Checkout page
 
 Checkout is controlled by the files located in the follwing path /components/com_j2store/views/checkout/tmpl
-![](assets/images/template_guide_checkout.png)
+![](./assets/images/template_guide_checkout.png)
 
 **OVERRIDE PATH**
 templates/YOUR-TEMPLATE/html/com_j2store/checkout/
@@ -174,7 +174,7 @@ templates/YOUR-TEMPLATE/html/com_j2store/checkout/
 
 Order history page is controlled by the files located in the follwing path
 /components/com_j2store/views/myprofile/tmpl
-![](assets/images/template_guide_myprofile.png)
+![](./assets/images/template_guide_myprofile.png)
 
 **OVERRIDE PATH**
 templates/YOUR-TEMPLATE/html/com_j2store/myprofile/
