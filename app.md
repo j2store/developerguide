@@ -101,7 +101,8 @@ This file should have following two methods:
 **onJ2StoreGetAppView** - This method is used to check if it is a app_example or not.
 
 **viewList** - A controller for this plugin.
-```php$html = $this->_getLayout('default', $vars);``` this will call the template layout for the app_example from /app_example/app_example/tmpl/default.php
+```php
+$html = $this->_getLayout('default', $vars);``` this will call the template layout for the app_example from /app_example/app_example/tmpl/default.php
 
 <a name="model_class"></a>
 #### App Model Class
