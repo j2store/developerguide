@@ -102,7 +102,9 @@ This file should have following two methods:
 
 **viewList** - A controller for this plugin.
 ```php
-$html = $this->_getLayout('default', $vars);``` this will call the template layout for the app_example from /app_example/app_example/tmpl/default.php
+$html = $this->_getLayout('default', $vars);
+``` 
+The above line will call the template layout for the app_example from /app_example/app_example/tmpl/default.php
 
 <a name="model_class"></a>
 #### App Model Class
