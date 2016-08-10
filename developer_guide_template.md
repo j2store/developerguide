@@ -30,11 +30,7 @@ This guide servers as a starting point for integrating J2Store with your templat
 
 1. Grab the J2Store package from our website http://j2store.org/
 
-2. If you would like to use PRO version for integrating in your template, please get in touch with us. We will grant you a PRO license (which can be used for the development / style integration and in your template demo. The template package should only provide the FREE version).  
-
-3. If you are in need of any apps like wishlist and product compare, please write to us. We are ready to help you with it.
-
-4. Become an affiliate ! You can start earning a handsome 30% for each of your referral sale.  http://j2store.org/affiliate-programme
+2. Become an affiliate ! You can start earning a handsome 30% for each of your referral sale.  http://j2store.org/affiliate-programme
 
 <a name="install_j2store"></a>
 ####Install J2Store
