@@ -130,7 +130,7 @@ require_once(JPATH_ADMINISTRATOR.'/components/com_j2store/library/appcontroller.
 
 class J2StoreControllerAppexample extends J2StoreAppController{
 
-	var $_element   = 'app_donation';
+	var $_element   = 'app_example';
 
 }
 ```
